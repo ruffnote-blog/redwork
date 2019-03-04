@@ -1,0 +1,17 @@
+{
+  "name": "RedWork",
+  "version": "1.0",
+  "description": "Danger Zone",
+  "permissions": ["storage"],
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.chatwork.com/*", "https://kcw.kddi.ne.jp/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "manifest_version": 2
+}
